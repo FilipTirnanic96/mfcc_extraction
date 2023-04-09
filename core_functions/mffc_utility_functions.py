@@ -45,6 +45,26 @@ def hamming(frames: np.array):
     return frames
 
 
+def stft(y: np.array, fs:float, n_fft: int, frame_size: float, frame_step: float):
+    # pre emphasis filter
+    filter_coeff = 0.95
+    y = preemphasis_filter(y, filter_coeff)
+
+    # framing
+    frames = framing(y, frame_size, frame_step, fs)
+
+    # window the frames with hamming window
+    frames = hamming(frames)
+
+    # create magnitude spectrogram
+    spec_frames = np.fft.fft(frames, n=n_fft, axis=1)
+
+    # take one spectrogram side
+    spec_frames = spec_frames[:, 0: int(n_fft / 2 + 1)]
+
+    return spec_frames
+
+
 def mel_filter(frames, f_min, f_max, n_mels, fs):
 
     n_fft = frames.shape[1] - 1
@@ -52,7 +72,7 @@ def mel_filter(frames, f_min, f_max, n_mels, fs):
     mel_lf = 2595 * np.log10(1 + f_min / 700)
     mel_hf = 2595 * np.log10(1 + f_max / 700)
 
-    mel_points = np.linspace(mel_lf, mel_hf, n_fft + 2)
+    mel_points = np.linspace(mel_lf, mel_hf, n_mels + 2)
 
     # convert back Mel to Hz
     hz_points = 700 * (np.power(10, mel_points / 2595) - 1)
@@ -78,20 +98,20 @@ def mel_filter(frames, f_min, f_max, n_mels, fs):
     # correct 0 values
     filtered_frames += np.finfo(float).eps
 
-    return filtered_frames
+    return filtered_frames, hz_points
 
 
 def discrete_cos_transformation(frames: np.array):
-    rows, cols = frames.size()
+    rows, cols = frames.shape
     dct_signal = np.zeros((rows, cols))
     N = cols
-    n = np.arange(1, N)
-    for i in np.arrange(0, rows):
+    n = np.arange(1, N+1)
+    for i in np.arange(0, rows):
         signal = frames[i, :]
-        X = np.zeros((1, N))
-        for k in np.arrage(1, N):
-            X[k] = np.sum(signal * np.cos(np.pi * (n - 1 / 2) * (k - 1) / N))
-            X[k] = np.sqrt(2 / N) * X[k];
+        X = np.zeros(N)
+        for k in np.arange(0, N):
+            X[k] = np.sum(signal * np.cos(np.pi * (n - 1 / 2) * ((k+1) - 1) / N))
+            X[k] = np.sqrt(2 / N) * X[k]
 
         dct_signal[i] = X
 
@@ -99,13 +119,14 @@ def discrete_cos_transformation(frames: np.array):
 
 
 def sin_liftering(mfcc: np.array):
-    mfcc_lift = np.zeros(mfcc.size())
+    mfcc_lift = np.zeros(mfcc.shape)
 
     # create lifting window
     n = np.arange(1, mfcc_lift.shape[1] + 1)
     D = 22
     w = 1 + (D / 2) * np.sin(np.pi * n / D)
-    for i in np.arange(0, mfcc.shape[0]):
-        mfcc_lift[i] *= w
+
+    # lift coefficients
+    mfcc_lift = mfcc * w
 
     return mfcc_lift
