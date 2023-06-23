@@ -49,8 +49,8 @@ Algorithm results are compared to mfcc extraction algorithm from <b>librosa pack
 &emsp; &emsp;<img src="https://github.com/FilipTirnanic96/mfcc_extraction/assets/24530942/a3e5106e-ac6a-4402-8b65-a0d8de662545" height="230" width="330"><br/>		
 
 &emsp; &emsp;- 	<ins><b> MFCCs </b></ins> <br/>
-&emsp; &emsp;<img src="https://github.com/FilipTirnanic96/mfcc_extraction/assets/24530942/eeab433a-d385-4026-af01-e14efeab5c40" height="300" width="400">
-&emsp; &emsp;<img src="https://github.com/FilipTirnanic96/mfcc_extraction/assets/24530942/9479e312-6910-4a36-a126-ce69ee1bcffe" height="300" width="400"><br/>		
+&emsp; &emsp;<img src="https://github.com/FilipTirnanic96/mfcc_extraction/assets/24530942/eeab433a-d385-4026-af01-e14efeab5c40" height="250" width="350">
+&emsp; &emsp;<img src="https://github.com/FilipTirnanic96/mfcc_extraction/assets/24530942/9479e312-6910-4a36-a126-ce69ee1bcffe" height="250" width="350"><br/>		
 
 </p>
 
