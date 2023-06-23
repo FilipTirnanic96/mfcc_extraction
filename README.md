@@ -15,7 +15,7 @@ Mel-Frequency Cepstral Coefficients (MFCC) comes from combines two analysis:  <b
 
  <br/>
  &emsp; &emsp;2. <b>Mel-Frequency Analysis</b> treats signal as human auditory system. It passes Signal spectrum though Mel filter which estimates human auditory system filtering. Example of Mel filter is presented in the picture below.<br/> <br/>
-&emsp;&emsp;<img src="https://github.com/FilipTirnanic96/mffc_extraction/assets/24530942/8ade4eb5-3406-4d58-bfa2-f4daa088447a" height="250" width="400">
+&emsp;&emsp;<img src="https://github.com/FilipTirnanic96/mfcc_extraction/assets/24530942/f4cec7b9-5b3e-4cd2-90a1-e7e1ee04ee33" height="250" width="400">
 <br/>
  </p> 
 
@@ -24,15 +24,15 @@ Mel-Frequency Cepstral Coefficients (MFCC) comes from combines two analysis:  <b
 <ins>MFCC algorithm is composed of 8 steps:</ins><br/><br/>
 &emsp; &emsp;1. <b>Framing</b> - Signal is framed into chunks often with length of 20-40ms <br/>
 &emsp; &emsp;2. <b>Windowing</b> - Frames are windowed with Hamming window <br/>
-&emsp; &emsp;<img src="https://github.com/FilipTirnanic96/mffc_extraction/assets/24530942/f2f0f57f-dd08-4f4a-9d5e-d189e6be9758" height="60" width="300"><br/>
+&emsp; &emsp;<img src="https://github.com/FilipTirnanic96/mfcc_extraction/assets/24530942/384e8d45-8517-4112-8bb8-4bf78b86f636" height="60" width="300"><br/>
 &emsp; &emsp;3. Calculating <b>Power Spectrum</b> of each frame <br/>
-&emsp; &emsp;<img src="https://github.com/FilipTirnanic96/mffc_extraction/assets/24530942/510790d5-4301-405f-bcc9-a7a5959a19c7" height="70" width="300"><br/>
+&emsp; &emsp;<img src="https://github.com/FilipTirnanic96/mfcc_extraction/assets/24530942/797fdce5-68c3-47a1-9413-2366133b82bf" height="70" width="300"><br/>
 &emsp; &emsp;4. Filtering each Power Spectrum with <b>Mel filter</b> <br/>
 &emsp; &emsp;5. Covert Mel Spectrum from <b>amplitude to dB</b> <br/>
 &emsp; &emsp;6. Using <b>DCT2</b> transformation on each Mel Spectrum<br/>  
-&emsp; &emsp;<img src="https://github.com/FilipTirnanic96/mffc_extraction/assets/24530942/7665f08f-1717-45b3-a2b4-d02447883e9d" height="90" width="450"><br/>
+&emsp; &emsp;<img src="https://github.com/FilipTirnanic96/mfcc_extraction/assets/24530942/38a4282a-83a5-493b-bcb6-e68445835b99" height="90" width="450"><br/>
 &emsp; &emsp;7. <b>Liftering of MFCC</b> using sin window <br/>
-&emsp; &emsp;<img src="https://github.com/FilipTirnanic96/mffc_extraction/assets/24530942/406b274b-4d6d-49dd-8ccd-c82b278aebdc" height="70" width="220"><br/>  
+&emsp; &emsp;<img src="https://github.com/FilipTirnanic96/mfcc_extraction/assets/24530942/b5ccf1b8-d723-4bcf-b486-163519ff3d18" height="70" width="220"><br/>  
 &emsp; &emsp;8. Taking <b>2. - 13 coefficient</b><br/>
 
 Details of implementation can be found in scipts <b><i>./core_functions/mffc_feature_extraction.py</i></b> and <b><i>./core_functions/mffc_utility_functions.py</i></b>. <br/>
