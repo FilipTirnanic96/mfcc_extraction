@@ -45,8 +45,8 @@ Algorithm results are compared to mfcc extraction algorithm from <b>librosa pack
 &emsp; &emsp;<img src="https://github.com/FilipTirnanic96/mfcc_extraction/assets/24530942/1b0d563d-c830-4c9d-bb0c-7e953b5cc353" height="200" width="350"><br/>
 
 &emsp; &emsp;- 	<ins><b> Spectrograms </b></ins> <br/>
-&emsp; &emsp;<img src="https://github.com/FilipTirnanic96/mfcc_extraction/assets/24530942/e2801845-2fdd-46df-b82b-181f5c7542d0" height="280" width="380">
-&emsp; &emsp;<img src="https://github.com/FilipTirnanic96/mfcc_extraction/assets/24530942/a3e5106e-ac6a-4402-8b65-a0d8de662545" height="280" width="380"><br/>		
+&emsp; &emsp;<img src="https://github.com/FilipTirnanic96/mfcc_extraction/assets/24530942/e2801845-2fdd-46df-b82b-181f5c7542d0" height="230" width="330">
+&emsp; &emsp;<img src="https://github.com/FilipTirnanic96/mfcc_extraction/assets/24530942/a3e5106e-ac6a-4402-8b65-a0d8de662545" height="230" width="330"><br/>		
 
 &emsp; &emsp;- 	<ins><b> MFCCs </b></ins> <br/>
 &emsp; &emsp;<img src="https://github.com/FilipTirnanic96/mfcc_extraction/assets/24530942/eeab433a-d385-4026-af01-e14efeab5c40" height="300" width="400">
