@@ -22,16 +22,16 @@ def extract_mfcc_feature(y: np.array, fs: float, n_fft: int = 512, frame_size: f
     mag_spec_frames = np.abs(stft(y, fs, n_fft, frame_size, frame_step))
 
     # create power spectrogram
-    pow_frames = (mag_spec_frames**2) / mag_spec_frames.shape[1]
+    pow_spec_frames = (mag_spec_frames**2) / mag_spec_frames.shape[1]
 
     # filter signal with Mel-filter
-    frames_envelop, hz_freq = mel_filter(pow_frames, 0, fs/2, n_mels, fs)
+    mel_power_spec_frames, hz_freq = mel_filter(pow_spec_frames, 0, fs/2, n_mels, fs)
 
     # log of signal
-    log_pow_frames = signal_power_to_db(frames_envelop)
+    log_spec_frames = signal_power_to_db(mel_power_spec_frames)
 
     # perform DCT
-    mfcc = discrete_cos_transformation(log_pow_frames)
+    mfcc = discrete_cos_transformation(log_spec_frames)
 
     # liftering of mfcc
     mfcc = sin_liftering(mfcc)
