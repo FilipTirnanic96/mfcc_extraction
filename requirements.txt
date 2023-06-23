@@ -1,0 +1,7 @@
+librosa==0.10.0.post2
+matplotlib==3.3.2
+numpy==1.21.5
+pandas==1.1.4
+scikit_learn==0.23.2
+scipy==1.4.1
+seaborn==0.11.0
