@@ -64,6 +64,6 @@ The classification of Cats and Dogs audio dataset are preformed using implemente
 &emsp; &emsp;4. <b><i>Reduce dimensionality with PCA to 30 components</i></b> <br/>
 &emsp; &emsp;5. <b><i>Train and test LogisticRegression classifier</i></b> <br/><br/>
 Classifier reached 93% accuracy on train and test data. <ins>Confusion matrices are presented below:</ins><br/><br/>
-&emsp; &emsp;<img src="https://github.com/FilipTirnanic96/mfcc_extraction/assets/24530942/5e4b25cf-e6f5-4fbf-9450-575233f551ef" height="250" width="350">
-&emsp; &emsp;<img src="https://github.com/FilipTirnanic96/mfcc_extraction/assets/24530942/0a154ef1-6b71-4344-b632-b642c0618a4c" height="250" width="350"><br/>
+&emsp; &emsp;<img src="https://github.com/FilipTirnanic96/mfcc_extraction/assets/24530942/5e4b25cf-e6f5-4fbf-9450-575233f551ef" height="280" width="370">
+&emsp; &emsp;<img src="https://github.com/FilipTirnanic96/mfcc_extraction/assets/24530942/0a154ef1-6b71-4344-b632-b642c0618a4c" height="280" width="370"><br/>
 </p>
