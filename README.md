@@ -11,7 +11,8 @@
 <p align="justify">
 Mel-Frequency Cepstral Coefficients (MFCC) comes from combines two analysis:  <b>Cepstral and Mel-Frequency Analysis. </b><br/><br/>
 	&emsp; &emsp;1. <b>Cepstral Analysis</b> aims to extract envelop of signal which carries the most relevant  information. It uses IFT (Inverse Fourier Transformation) and LPF (Low Pass Filter) to extract coefficient representing signal envelop of Log Power Signal Spectrum.<br/><br/>
-&emsp;&emsp;<img src="https://github.com/FilipTirnanic96/mffc_extraction/assets/24530942/450e9e03-df93-4e41-9d1b-54b42544a72b" height="260" width="410">
+&emsp;&emsp;<img src="https://github.com/FilipTirnanic96/mfcc_extraction/assets/24530942/aa09d42a-79bf-4e7f-8caf-0bd6bc532216" height="260" width="410">
+
  <br/>
  &emsp; &emsp;2. <b>Mel-Frequency Analysis</b> treats signal as human auditory system. It passes Signal spectrum though Mel filter which estimates human auditory system filtering. Example of Mel filter is presented in the picture below.<br/> <br/>
 &emsp;&emsp;<img src="https://github.com/FilipTirnanic96/mffc_extraction/assets/24530942/8ade4eb5-3406-4d58-bfa2-f4daa088447a" height="250" width="400">
