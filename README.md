@@ -41,8 +41,8 @@ Details of implementation can be found in scipts <b><i>./core_functions/mffc_fea
 <p align="justify">
 Algorithm results are compared to mfcc extraction algorithm from <b>librosa package</b>. One representative signal (cat audio sample) is used as input signal and Spectrograms and MFFCs are generated using both algorithms (implemented one and librosa). Results, generated using script <b>./main_scrips/compare_impl_vs_librosa_mffc.py</b>, are shown below. <br/><br/>
 &emsp; &emsp;- 	<ins><b> Input signal </b></ins> <br/>
-&emsp; &emsp;<img src="https://github.com/FilipTirnanic96/mfcc_extraction/assets/24530942/db911a68-f592-4b8e-8108-ccba223264c2" height="200" width="350"><br/>
-	
+&emsp; &emsp;<img src="https://github.com/FilipTirnanic96/mfcc_extraction/assets/24530942/ed0945e6-2312-41e0-a8a9-27359f5e34a3" height="200" width="350"><br/>
+
 &emsp; &emsp;- 	<ins><b> Spectrograms </b></ins> <br/>
 &emsp; &emsp;<img src="https://github.com/FilipTirnanic96/mfcc_extraction/assets/24530942/dd6a201f-201f-48a3-b405-090c436b5e0e" height="280" width="380">
 &emsp; &emsp;<img src="https://github.com/FilipTirnanic96/mfcc_extraction/assets/24530942/6f3f4f4d-43b3-4e08-b1b0-ba81454450e9" height="280" width="380"><br/>		
