@@ -173,7 +173,7 @@ if __name__ == '__main__':
     X_test = np.array([feature.ravel() for feature in X_test])
 
     # Use PCA
-    n_components = 10
+    n_components = 30
     pca = PCA(n_components=n_components)
 
     X_train = pca.fit(X_train).transform(X_train)

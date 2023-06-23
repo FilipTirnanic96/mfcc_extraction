@@ -84,7 +84,7 @@ if __name__ == '__main__':
     fs, y = sci_wav.read(wav_audio_location)
     # convert signal to double
     y = 1.0 * y
-    t = np.linspace(0, y.shape[0] * fs, y.shape[0])
+    t = np.linspace(0, y.shape[0] / fs, y.shape[0])
 
     # visualize signal
     plt.figure(figsize=(6, 4))
