@@ -42,15 +42,15 @@ Details of implementation can be found in scipts <b><i>./core_functions/mffc_fea
 <p align="justify">
 Algorithm results are compared to mfcc extraction algorithm from <b>librosa package</b>. One representative signal (cat audio sample) is used as input signal and Spectrograms and MFFCs are generated using both algorithms (implemented one and librosa). Results, generated using script <b>./main_scrips/compare_impl_vs_librosa_mffc.py</b>, are shown below. <br/><br/>
 &emsp; &emsp;- 	<ins><b> Input signal </b></ins> <br/>
-&emsp; &emsp;<img src="https://github.com/FilipTirnanic96/mfcc_extraction/assets/24530942/ed0945e6-2312-41e0-a8a9-27359f5e34a3" height="200" width="350"><br/>
+&emsp; &emsp;<img src="https://github.com/FilipTirnanic96/mfcc_extraction/assets/24530942/1b0d563d-c830-4c9d-bb0c-7e953b5cc353" height="200" width="350"><br/>
 
 &emsp; &emsp;- 	<ins><b> Spectrograms </b></ins> <br/>
-&emsp; &emsp;<img src="https://github.com/FilipTirnanic96/mfcc_extraction/assets/24530942/dd6a201f-201f-48a3-b405-090c436b5e0e" height="280" width="380">
-&emsp; &emsp;<img src="https://github.com/FilipTirnanic96/mfcc_extraction/assets/24530942/6f3f4f4d-43b3-4e08-b1b0-ba81454450e9" height="280" width="380"><br/>		
+&emsp; &emsp;<img src="https://github.com/FilipTirnanic96/mfcc_extraction/assets/24530942/e2801845-2fdd-46df-b82b-181f5c7542d0" height="280" width="380">
+&emsp; &emsp;<img src="https://github.com/FilipTirnanic96/mfcc_extraction/assets/24530942/a3e5106e-ac6a-4402-8b65-a0d8de662545" height="280" width="380"><br/>		
 
 &emsp; &emsp;- 	<ins><b> MFCCs </b></ins> <br/>
-&emsp; &emsp;<img src="https://github.com/FilipTirnanic96/mfcc_extraction/assets/24530942/c77b0955-153d-44ca-9059-2c510a2387f5" height="300" width="400">
-&emsp; &emsp;<img src="https://github.com/FilipTirnanic96/mfcc_extraction/assets/24530942/0ab541a6-947c-4570-822f-a2da8fce0262" height="300" width="400"><br/>		
+&emsp; &emsp;<img src="https://github.com/FilipTirnanic96/mfcc_extraction/assets/24530942/eeab433a-d385-4026-af01-e14efeab5c40" height="300" width="400">
+&emsp; &emsp;<img src="https://github.com/FilipTirnanic96/mfcc_extraction/assets/24530942/9479e312-6910-4a36-a126-ce69ee1bcffe" height="300" width="400"><br/>		
 
 </p>
 
