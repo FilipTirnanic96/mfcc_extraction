@@ -157,17 +157,15 @@ def discrete_cos_transformation(frames: np.array):
     """
 
     rows, cols = frames.shape
-    dct_signal = np.zeros((rows, cols))
+
     N = cols
     n = np.arange(1, N + 1)
-    for i in np.arange(0, rows):
-        signal = frames[i, :]
-        X = np.zeros(N)
-        for k in np.arange(0, N):
-            X[k] = np.sum(signal * np.cos(np.pi * (n - 1 / 2) * k / N))
-            X[k] = np.sqrt(2 / N) * X[k]
 
-        dct_signal[i] = X
+    weights = np.zeros((N, N))
+    for k in np.arange(0, N):
+        weights[:, k] = np.cos(np.pi * (n - 1 / 2) * k / N)
+
+    dct_signal = np.sqrt(2 / N) * np.dot(frames, weights)
 
     return dct_signal
 

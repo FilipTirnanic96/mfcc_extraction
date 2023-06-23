@@ -1,5 +1,5 @@
 import numpy as np
-import scipy.io.wavfile as sci_wav # Open wav files
+import scipy.io.wavfile as sci_wav
 from matplotlib import pyplot as plt
 
 from core_functions.mfcc_feature_extraction import extract_mfcc_feature
@@ -110,5 +110,4 @@ if __name__ == '__main__':
     y_mffc_lib, y_mfcc = get_mfcc_of_signal(y, params)
     visualize_mfcc(y_mfcc, params, "Implemented MFCC function")
     visualize_mfcc(y_mffc_lib, params, "Librosa MFCC function")
-
     plt.show()
